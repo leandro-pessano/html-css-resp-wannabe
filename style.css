@@ -71,3 +71,34 @@ img {
 .clear {
   clear: both;
 }
+
+
+/* RESPONSIVENESS*/
+@media screen and (max-width: 420px) {
+  .row {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right,
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    float: none;
+    width: 100%;
+  }
+
+  #lezioni .row>.left,
+  #steps .row>.left,
+  #steps .row>.central {
+    margin-bottom: 60px;
+  }
+}
