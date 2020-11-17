@@ -72,8 +72,7 @@ img {
   clear: both;
 }
 
-
-/* RESPONSIVENESS*/
+/* RESPONSIVENESS Smartphone*/
 @media screen and (max-width: 420px) {
   .row {
     width: calc(100% - 40px);
@@ -88,13 +87,45 @@ img {
   #lezioni .row>.right,
   #steps .row>.left,
   #steps .row>.central,
-  #steps .row>.right,
-  #why .row>.first,
-  #why .row>.second,
-  #why .row>.third {
+  #steps .row>.right {
     float: none;
     width: 100%;
   }
+
+  #lezioni .row>.left,
+  #steps .row>.left,
+  #steps .row>.central {
+    margin-bottom: 60px;
+  }
+}
+
+/* RESPONSIVENESS Tablet*/
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .row {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  #steps .row>.right {
+    width: 100%;
+  }
+
 
   #lezioni .row>.left,
   #steps .row>.left,
